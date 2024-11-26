@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  /* Primary */
+
+  --lightRed: hsl(0, 100%, 67%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+
+  --lightSlateBlue: hsl(252, 100%, 67%);
+  --lightRoyalBlue: hsl(241, 81%, 54%);
+  --violetBlue: hsla(256, 72%, 46%, 1);
+  --persianBlue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+  /* breakpoints */
+  --mobile: 480px;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: 356px;
+  border-radius: 0 0 32px 32px;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(251, 100%, 67%, 1),
+    hsla(251, 100%, 63%, 1),
+    hsla(241, 80%, 55%, 1)
+  );
+  color: var(--lightLavender);
+  @media (min-width: 30rem) {
+    height: 100%;
+    width: 23rem;
+    border-radius: 2rem;
+    justify-content: flex-start;
+  }
+}
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 13px;
+  @media (min-width: 30rem) {
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 38px;
+  }
+}
+.header-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(255, 71%, 45%, 1),
+    hsla(241, 71%, 45%, 0)
+  );
+
+  & p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  & div {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--white);
+  }
+  @media (min-width: 30rem) {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-top: 35px;
+    & div {
+      font-size: 72px;
+    }
+    & p {
+      font-size: 18px;
+    }
+  }
+}
+.header-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 260px;
+  height: 81px;
+  & h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+  }
+  & p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  @media (min-width: 30rem) {
+    margin-top: 28px;
+    gap: 0;
+    & p {
+      font-size: 18px;
+    }
+  }
+}
+main {
+  padding: 13px 30px 30px;
+  @media (min-width: 30rem) {
+    padding: 38px 40px 46px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 24px;
+  @media (min-width: 30rem) {
+    width: 288px;
+    margin-bottom: 41px;
+  }
+}
+h2 {
+  color: hsla(223, 30%, 27%, 1);
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+}
+li {
+  height: 56px;
+  width: 100%;
+  list-style-type: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 16px 18px;
+  font-size: 16px;
+  @media (min-width: 30rem) {
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+li:first-child {
+  background-color: hsla(0, 100%, 96%, 0.95);
+  color: hsla(0, 100%, 67%, 1);
+}
+li:nth-child(2) {
+  background-color: hsla(39, 100%, 96%, 0.95);
+  color: hsla(39, 100%, 55%, 1);
+}
+li:nth-child(3) {
+  background-color: hsla(165, 100%, 96%, 0.95);
+  color: hsla(165, 100%, 37%, 1);
+}
+li:nth-child(4) {
+  background-color: hsla(233, 85%, 96%, 0.95);
+  color: hsla(233, 85%, 45%, 1);
+}
+li .score-name {
+  display: flex;
+  gap: 12px;
+  font-weight: 500;
+}
+.score-value {
+  color: hsla(223, 30%, 27%, 1);
+  font-weight: 700;
+  & span {
+    color: rgb(181, 178, 178);
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  & button {
+    width: 100%;
+    height: 56px;
+    background-color: hsla(223, 30%, 27%, 1);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    border-radius: 128px;
+    @media (min-width: 30rem) {
+      width: 288px;
+      cursor: pointer;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          hsla(251, 100%, 67%, 1),
+          hsla(251, 100%, 63%, 1),
+          hsla(241, 80%, 55%, 1)
+        );
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+@media (min-width: 30rem) {
+  body {
+    background-color: hsla(219, 100%, 97%, 1);
+  }
+  .container {
+    display: flex;
+    width: 46rem;
+    height: 32rem;
+    margin: 17.75rem auto;
+    border-radius: 2rem;
+    background-color: var(--white);
+  }
+}
