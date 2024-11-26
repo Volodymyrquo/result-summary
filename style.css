@@ -56,6 +56,7 @@ header {
     width: 23rem;
     border-radius: 2rem;
     justify-content: flex-start;
+    gap: 0;
   }
 }
 .header-title {
@@ -66,6 +67,7 @@ header {
     font-size: 24px;
     line-height: 31px;
     margin-top: 38px;
+    margin-bottom: 35px;
   }
 }
 .header-score {
@@ -94,7 +96,7 @@ header {
   @media (min-width: 30rem) {
     width: 12.5rem;
     height: 12.5rem;
-    margin-top: 8px;
+    margin-bottom: 28px;
     & div {
       font-size: 72px;
     }
@@ -123,7 +125,6 @@ header {
     line-height: 23px;
   }
   @media (min-width: 30rem) {
-    margin-top: 28px;
     gap: 14px;
     & h2 {
       font-size: 2rem;
