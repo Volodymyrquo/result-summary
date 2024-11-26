@@ -216,7 +216,7 @@ footer {
     @media (min-width: 30rem) {
       width: 288px;
       cursor: pointer;
-      margin-top: 26px;
+      margin-top: 2px;
 
       &:hover {
         background-image: linear-gradient(
