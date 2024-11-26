@@ -110,7 +110,7 @@ header {
   gap: 0.5rem;
   width: 260px;
   height: 81px;
-  & h4 {
+  & h2 {
     font-size: 24px;
     font-weight: 700;
     color: var(--white);
@@ -149,7 +149,7 @@ ul {
     margin-bottom: 41px;
   }
 }
-h2 {
+h1 {
   color: hsla(223, 30%, 27%, 1);
   font-size: 18px;
   line-height: 23px;
