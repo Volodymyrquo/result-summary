@@ -94,6 +94,7 @@ header {
   @media (min-width: 30rem) {
     width: 12.5rem;
     height: 12.5rem;
+    margin-top: 8px;
     & div {
       font-size: 72px;
     }
@@ -215,6 +216,8 @@ footer {
     @media (min-width: 30rem) {
       width: 288px;
       cursor: pointer;
+      margin-top: 26px;
+
       &:hover {
         background-image: linear-gradient(
           to right,
