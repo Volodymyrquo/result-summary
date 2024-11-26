@@ -94,7 +94,6 @@ header {
   @media (min-width: 30rem) {
     width: 12.5rem;
     height: 12.5rem;
-    margin-top: 35px;
     & div {
       font-size: 72px;
     }
@@ -113,6 +112,7 @@ header {
   & h2 {
     font-size: 24px;
     font-weight: 700;
+    line-height: 31px;
     color: var(--white);
   }
   & p {
@@ -150,7 +150,7 @@ ul {
   }
 }
 h1 {
-  color: hsla(223, 30%, 27%, 1);
+  color: rgb(202, 201, 255);
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
