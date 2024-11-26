@@ -124,7 +124,7 @@ header {
   }
   @media (min-width: 30rem) {
     margin-top: 28px;
-    gap: 0;
+    gap: 14px;
     & p {
       font-size: 18px;
     }
